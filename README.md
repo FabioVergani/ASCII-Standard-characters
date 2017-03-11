@@ -1,2 +1,2 @@
-# Ascii-Table
-ASCII Standard characters chart
+# ASCII Standard characters
+American Standard Code for Information Interchange.
