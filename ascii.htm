@@ -1,0 +1,1590 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><title>ascii 7 bit</title>
+<meta name="author" content="Fabio Vergani">
+<meta name="contact" content="facebook.com/verganifabio">
+<style>
+html,body{text-align:center;color:#290811;}
+html{background:#f3f2f0;}
+body{background:transparent;}
+.data, .data *{font-family:monospace;box-sizing:border-box;user-select:none;cursor:default;}
+.data table{display:inline-block;border-collapse:collapse;padding:5px;vertical-align:top;background:#edece6;border:1px solid #ccc8c2;}
+.data table tr{background:#f1efe7;}
+.data table tr:nth-child(odd){background:#fefbf0;border:1px solid #9b957f;}
+.data table tr:nth-child(odd) td:nth-child(1){width:2.4em;background:#e3e1d4;color:#999177;}
+.data table tr:nth-child(odd) td:nth-child(2){text-align:left;text-indent:4px;height:1.8em;color:#6e6851;}
+.data table tr:nth-child(odd) td:nth-child(2):hover, .data li:hover b,.data pre:hover{user-select:initial;}
+.data table tr:nth-child(odd) td:nth-child(3){width:2em;font-weight:600;background:#fefdfa;user-select:initial;}
+.data table tr:nth-child(even){text-align:left;padding-left:1em;}
+.data table tr ul{margin:.2em 0 .3em 0;padding:.4em;list-style-type:none;}
+.data table tr:last-child ul{margin-bottom:0;}
+.data table tr li{padding:0 0 2px 0;border:0;border-bottom:1px dashed #cfccbd;color:#b4b1a5;}
+.data table tr li b {float:right;font-weight:500;color:#949083;}
+.data table tr li i{font-style:normal;color: #d5d2c4;}
+.data table td{overflow:hidden;}
+</style>
+</head>
+<body>
+
+	<main>
+		<article class="data">
+			<h2>Ascii</h2><p>!"#$%&'()*+,-./:;<=>?@[\]^_ `{|}˜<br />ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />abcdefghijklmnopqrstuvwxyz<br />0123456789</p>
+			<!-- CONTROL CHARACTERS -->
+				<table>
+					<tbody>
+						<tr>
+							<td>0</td><td title="Null">&#9216; \0</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>0</b></li>
+									<li>Oct: <b>00</b></li>
+									<li>Hex: <b><i>0x</i>0</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>1</td><td title="Start Of Heading">&#9217;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1</b></li>
+									<li>Oct: <b>01</b></li>
+									<li>Hex: <b><i>0x</i>1</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td><td title="Start Of Text">&#9218;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10</b></li>
+									<li>Oct: <b>02</b></li>
+									<li>Hex: <b><i>0x</i>2</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td><td title="End Of Text">&#9219;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11</b></li>
+									<li>Oct: <b>03</b></li>
+									<li>Hex: <b><i>0x</i>3</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>4</td><td title="End Of Transmission">&#9220;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>100</b></li>
+									<li>Oct: <b>04</b></li>
+									<li>Hex: <b><i>0x</i>4</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td><td title="Enquiry">	&#9221;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>101</b></li>
+									<li>Oct: <b>05</b></li>
+									<li>Hex: <b><i>0x</i>5</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>6</td><td title="Acknowledgment">&#9222;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>110</b></li>
+									<li>Oct: <b>06</b></li>
+									<li>Hex: <b><i>0x</i>6</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>7</td><td title="Bell">&#9223; \a</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>111</b></li>
+									<li>Oct: <b>07</b></li>
+									<li>Hex: <b><i>0x</i>7</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>8</td><td title="Back Space">&#9224; \b</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1000</b></li>
+									<li>Oct: <b>010</b></li>
+									<li>Hex: <b><i>0x</i>8</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>9</td><td title="Horizontal Tab">&#9225; \t</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1001</b></li>
+									<li>Oct: <b>011</b></li>
+									<li>Hex: <b><i>0x</i>9</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>10</td><td title="Line Feed">&#9226; \n</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1010</b></li>
+									<li>Oct: <b>012</b></li>
+									<li>Hex: <b><i>0x</i>a</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>11</td><td title="Vertical Tab">&#9227; \v</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1011</b></li>
+									<li>Oct: <b>013</b></li>
+									<li>Hex: <b><i>0x</i>b</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>12</td><td title="Form Feed">&#9228; \f</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1100</b></li>
+									<li>Oct: <b>014</b></li>
+									<li>Hex: <b><i>0x</i>c</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>13</td><td title="Carriage Return">&#9229; \r</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1101</b></li>
+									<li>Oct: <b>015</b></li>
+									<li>Hex: <b><i>0x</i>d</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>14</td><td title="Shift Out / X-On">&#9230;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1110</b></li>
+									<li>Oct: <b>016</b></li>
+									<li>Hex: <b><i>0x</i>e</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>15</td><td title="Shift In / X-Off">&#9231;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>1111</b></li>
+									<li>Oct: <b>017</b></li>
+									<li>Hex: <b><i>0x</i>f</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>16</td><td title="Data Line Escape">&#9232;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10000</b></li>
+									<li>Oct: <b>020</b></li>
+									<li>Hex: <b><i>0x</i>10</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>17</td><td title="Device Control 1">&#9233;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10001</b></li>
+									<li>Oct: <b>021</b></li>
+									<li>Hex: <b><i>0x</i>11</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>18</td><td title="Device Control 2">&#9234;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10010</b></li>
+									<li>Oct: <b>022</b></li>
+									<li>Hex: <b><i>0x</i>12</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>19</td><td title="Device Control 3">&#9235;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10011</b></li>
+									<li>Oct: <b>023</b></li>
+									<li>Hex: <b><i>0x</i>13</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>20</td><td title="Device Control 4">&#9236;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10100</b></li>
+									<li>Oct: <b>024</b></li>
+									<li>Hex: <b><i>0x</i>14</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>21</td><td title="Neg. Acknowledgement">&#9237;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10101</b></li>
+									<li>Oct: <b>025</b></li>
+									<li>Hex: <b><i>0x</i>15</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>22</td><td title="Synchronous Idle">&#9238;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10110</b></li>
+									<li>Oct: <b>026</b></li>
+									<li>Hex: <b><i>0x</i>16</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>23</td><td title="End of Transmit Block">&#9239;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>10111</b></li>
+									<li>Oct: <b>027</b></li>
+									<li>Hex: <b><i>0x</i>17</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>24</td><td title="Cancel">&#9240;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11000</b></li>
+									<li>Oct: <b>030</b></li>
+									<li>Hex: <b><i>0x</i>18</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>25</td><td title="End of Medium">&#9241;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11001</b></li>
+									<li>Oct: <b>031</b></li>
+									<li>Hex: <b><i>0x</i>19</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>26</td><td title="Substitute">&#9242;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11010</b></li>
+									<li>Oct: <b>032</b></li>
+									<li>Hex: <b><i>0x</i>1a</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>27</td><td title="Escape">&#9243; \e</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11011</b></li>
+									<li>Oct: <b>033</b></li>
+									<li>Hex: <b><i>0x</i>1b</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>28</td><td title="File Separator">&#9244;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11100</b></li>
+									<li>Oct: <b>034</b></li>
+									<li>Hex: <b><i>0x</i>1c</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>29</td><td title="Group Separator">&#9245;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11101</b></li>
+									<li>Oct: <b>035</b></li>
+									<li>Hex: <b><i>0x</i>1d</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>30</td><td title="Record Separator">&#9246;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11110</b></li>
+									<li>Oct: <b>036</b></li>
+									<li>Hex: <b><i>0x</i>1e</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>31</td><td title="Unit Separator">&#9247;</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul>
+									<li>Binary: <b>11111</b></li>
+									<li>Oct: <b>037</b></li>
+									<li>Hex: <b><i>0x</i>1f</b></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			<!-- PRINTABLE CHARACTERS -->
+				<table>
+					<tbody>
+						<tr>
+							<td>32</td><td>\s</td><td>&#32;</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>100000</b></li>
+									<li>Oct: <b>040</b></li>
+									<li>Hex: <b><i>0x</i>20</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>33</td><td>&amp;excl;</td><td>&excl;</td><!-- ! -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>100001</b></li>
+									<li>Oct: <b>041</b></li>
+									<li>Hex: <b><i>0x</i>21</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>34</td><td>&amp;quot;</td><td>&quot;</td><!-- " -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>100010</b></li>
+									<li>Oct: <b>042</b></li>
+									<li>Hex: <b><i>0x</i>22</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>35</td><td>&amp;num;</td><td>&num;</td><!-- # -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>100011</b></li>
+									<li>Oct: <b>043</b></li>
+									<li>Hex: <b><i>0x</i>23</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>36</td><td>&amp;dollar;</td><td>&dollar;</td><!-- $ -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>100100</b></li>
+									<li>Oct: <b>044</b></li>
+									<li>Hex: <b><i>0x</i>24</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>37</td><td>&amp;percnt;</td><td>&percnt;</td><!-- % -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>100101</b></li>
+									<li>Oct: <b>045</b></li>
+									<li>Hex: <b><i>0x</i>25</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>38</td><td>&amp;amp;</td><td>&amp;</td><!-- & -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>100110</b></li>
+									<li>Oct: <b>046</b></li>
+									<li>Hex: <b><i>0x</i>26</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>39</td><td>&amp;apos;</td><td>&apos;</td><!-- ' -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>100111</b></li>
+									<li>Oct: <b>047</b></li>
+									<li>Hex: <b><i>0x</i>27</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>40</td><td>&amp;lpar;</td><td>&lpar;</td><!-- ( -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>101000</b></li>
+									<li>Oct: <b>050</b></li>
+									<li>Hex: <b><i>0x</i>28</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>41</td><td>&amp;rpar;</td><td>&rpar;</td><!-- ) -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>101001</b></li>
+									<li>Oct: <b>051</b></li>
+									<li>Hex: <b><i>0x</i>29</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>42</td><td>&amp;ast;</td><td>&ast;</td><!-- * -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>101010</b></li>
+									<li>Oct: <b>052</b></li>
+									<li>Hex: <b><i>0x</i>2a</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>43</td><td>&amp;plus;</td><td>&plus;</td><!-- + -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>101011</b></li>
+									<li>Oct: <b>053</b></li>
+									<li>Hex: <b><i>0x</i>2b</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>44</td><td>&amp;comma;</td><td>&comma;</td><!-- , -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>101100</b></li>
+									<li>Oct: <b>054</b></li>
+									<li>Hex: <b><i>0x</i>2c</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>45</td><td>&amp;hyphen;</td><td>&hyphen;</td><!-- - -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>101101</b></li>
+									<li>Oct: <b>055</b></li>
+									<li>Hex: <b><i>0x</i>2d</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>46</td><td>&amp;period;</td><td>&period;</td><!-- . -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>101110</b></li>
+									<li>Oct: <b>056</b></li>
+									<li>Hex: <b><i>0x</i>2e</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>47</td><td>&amp;sol;</td><td>&sol;</td><!-- / -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>101111</b></li>
+									<li>Oct: <b>057</b></li>
+									<li>Hex: <b><i>0x</i>2f</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>48</td><td></td><td title="Zero">0</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>110000</b></li>
+									<li>Oct: <b>060</b></li>
+									<li>Hex: <b><i>0x</i>30</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>49</td><td></td><td title="One">1</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>110001</b></li>
+									<li>Oct: <b>061</b></li>
+									<li>Hex: <b><i>0x</i>31</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>50</td><td></td><td title="Two">2</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>110010</b></li>
+									<li>Oct: <b>062</b></li>
+									<li>Hex: <b><i>0x</i>32</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>51</td><td></td><td title="Three">3</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>110011</b></li>
+									<li>Oct: <b>063</b></li>
+									<li>Hex: <b><i>0x</i>33</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>52</td><td></td><td title="Four">4</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>110100</b></li>
+									<li>Oct: <b>064</b></li>
+									<li>Hex: <b><i>0x</i>34</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>53</td><td></td><td title="Five">5</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>110101</b></li>
+									<li>Oct: <b>065</b></li>
+									<li>Hex: <b><i>0x</i>35</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>54</td><td></td><td title="Six">6</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>110110</b></li>
+									<li>Oct: <b>066</b></li>
+									<li>Hex: <b><i>0x</i>36</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>55</td><td></td><td title="Seven">7</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>110111</b></li>
+									<li>Oct: <b>067</b></li>
+									<li>Hex: <b><i>0x</i>37</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>56</td><td></td><td title="Eight">8</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>111000</b></li>
+									<li>Oct: <b>070</b></li>
+									<li>Hex: <b><i>0x</i>38</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>57</td><td></td><td title="Nine">9</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>111001</b></li>
+									<li>Oct: <b>071</b></li>
+									<li>Hex: <b><i>0x</i>39</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>58</td><td>&amp;colon;</td><td>&colon;</td><!-- : -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>111010</b></li>
+									<li>Oct: <b>072</b></li>
+									<li>Hex: <b><i>0x</i>3a</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>59</td><td>&amp;semi;</td><td>&semi;</td><!-- ; -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>111011</b></li>
+									<li>Oct: <b>073</b></li>
+									<li>Hex: <b><i>0x</i>3b</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>60</td><td>&amp;lt;</td><td>&lt;</td><!-- < -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>111100</b></li>
+									<li>Oct: <b>074</b></li>
+									<li>Hex: <b><i>0x</i>3c</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>61</td><td>&amp;equals;</td><td>&equals;</td><!-- = -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>111101</b></li>
+									<li>Oct: <b>075</b></li>
+									<li>Hex: <b><i>0x</i>3d</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>62</td><td>&amp;gt;</td><td>&gt;</td><!-- > -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>111110</b></li>
+									<li>Oct: <b>076</b></li>
+									<li>Hex: <b><i>0x</i>3e</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>63</td><td>&amp;quest;</td><td>&quest;</td><!-- ? -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>111111</b></li>
+									<li>Oct: <b>077</b></li>
+									<li>Hex: <b><i>0x</i>3f</b></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td>64</td><td>&amp;commat;</td><td>&commat;</td><!-- @ -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1000000</b></li>
+									<li>Oct: <b>0100</b></li>
+									<li>Hex: <b><i>0x</i>40</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>65</td><td></td><td>A</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1000001</b></li>
+									<li>Oct: <b>0101</b></li>
+									<li>Hex: <b><i>0x</i>41</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>66</td><td></td><td>B</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1000010</b></li>
+									<li>Oct: <b>0102</b></li>
+									<li>Hex: <b><i>0x</i>42</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>67</td><td></td><td>C</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1000011</b></li>
+									<li>Oct: <b>0103</b></li>
+									<li>Hex: <b><i>0x</i>43</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>68</td><td></td><td>D</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1000100</b></li>
+									<li>Oct: <b>0104</b></li>
+									<li>Hex: <b><i>0x</i>44</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>69</td><td></td><td>E</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1000101</b></li>
+									<li>Oct: <b>0105</b></li>
+									<li>Hex: <b><i>0x</i>45</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>70</td><td></td><td>F</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1000110</b></li>
+									<li>Oct: <b>0106</b></li>
+									<li>Hex: <b><i>0x</i>46</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>71</td><td></td><td>G</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1000111</b></li>
+									<li>Oct: <b>0107</b></li>
+									<li>Hex: <b><i>0x</i>47</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>72</td><td></td><td>H</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1001000</b></li>
+									<li>Oct: <b>0110</b></li>
+									<li>Hex: <b><i>0x</i>48</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>73</td><td></td><td>I</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1001001</b></li>
+									<li>Oct: <b>0111</b></li>
+									<li>Hex: <b><i>0x</i>49</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>74</td><td></td><td>J</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1001010</b></li>
+									<li>Oct: <b>0112</b></li>
+									<li>Hex: <b><i>0x</i>4a</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>75</td><td></td><td>K</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1001011</b></li>
+									<li>Oct: <b>0113</b></li>
+									<li>Hex: <b><i>0x</i>4b</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>76</td><td></td><td>L</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1001100</b></li>
+									<li>Oct: <b>0114</b></li>
+									<li>Hex: <b><i>0x</i>4c</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>77</td><td></td><td>M</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1001101</b></li>
+									<li>Oct: <b>0115</b></li>
+									<li>Hex: <b><i>0x</i>4d</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>78</td><td></td><td>N</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1001110</b></li>
+									<li>Oct: <b>0116</b></li>
+									<li>Hex: <b><i>0x</i>4e</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>79</td><td></td><td>O</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1001111</b></li>
+									<li>Oct: <b>0117</b></li>
+									<li>Hex: <b><i>0x</i>4f</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>80</td><td></td><td>P</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1010000</b></li>
+									<li>Oct: <b>0120</b></li>
+									<li>Hex: <b><i>0x</i>50</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>81</td><td></td><td>Q</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1010001</b></li>
+									<li>Oct: <b>0121</b></li>
+									<li>Hex: <b><i>0x</i>51</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>82</td><td></td><td>R</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1010010</b></li>
+									<li>Oct: <b>0122</b></li>
+									<li>Hex: <b><i>0x</i>52</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>83</td><td></td><td>S</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1010011</b></li>
+									<li>Oct: <b>0123</b></li>
+									<li>Hex: <b><i>0x</i>53</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>84</td><td></td><td>T</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1010100</b></li>
+									<li>Oct: <b>0124</b></li>
+									<li>Hex: <b><i>0x</i>54</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>85</td><td></td><td>U</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1010101</b></li>
+									<li>Oct: <b>0125</b></li>
+									<li>Hex: <b><i>0x</i>55</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>86</td><td></td><td>V</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1010110</b></li>
+									<li>Oct: <b>0126</b></li>
+									<li>Hex: <b><i>0x</i>56</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>87</td><td></td><td>W</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1010111</b></li>
+									<li>Oct: <b>0127</b></li>
+									<li>Hex: <b><i>0x</i>57</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>88</td><td></td><td>X</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1011000</b></li>
+									<li>Oct: <b>0130</b></li>
+									<li>Hex: <b><i>0x</i>58</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>89</td><td></td><td>Y</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1011001</b></li>
+									<li>Oct: <b>0131</b></li>
+									<li>Hex: <b><i>0x</i>59</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>90</td><td></td><td>Z</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1011010</b></li>
+									<li>Oct: <b>0132</b></li>
+									<li>Hex: <b><i>0x</i>5a</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>91</td><td>&amp;lsqb;</td><td>&lsqb;</td><!-- [ -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1011011</b></li>
+									<li>Oct: <b>0133</b></li>
+									<li>Hex: <b><i>0x</i>5b</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>92</td><td>&amp;bsol;</td><td>&bsol;</td><!-- \ -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1011100</b></li>
+									<li>Oct: <b>0134</b></li>
+									<li>Hex: <b><i>0x</i>5c</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>93</td><td>&amp;rsqb;</td><td>&rsqb;</td><!-- ] -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1011101</b></li>
+									<li>Oct: <b>0135</b></li>
+									<li>Hex: <b><i>0x</i>5d</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>94</td><td>&amp;Hat;</td><td>&Hat;</td><!-- ^ -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1011110</b></li>
+									<li>Oct: <b>0136</b></li>
+									<li>Hex: <b><i>0x</i>5e</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>95</td><td>&amp;lowbar;</td><td>&lowbar;</td><!-- _ -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1011111</b></li>
+									<li>Oct: <b>0137</b></li>
+									<li>Hex: <b><i>0x</i>5f</b></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td>96</td>
+							<td>&amp;grave;</td>
+							<td>&grave;</td><!-- ` -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1100000</b></li>
+									<li>Oct: <b>0140</b></li>
+									<li>Hex: <b><i>0x</i>60</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>97</td><td></td><td>a</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1100001</b></li>
+									<li>Oct: <b>0141</b></li>
+									<li>Hex: <b><i>0x</i>61</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>98</td><td></td><td>b</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1100010</b></li>
+									<li>Oct: <b>0142</b></li>
+									<li>Hex: <b><i>0x</i>62</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>99</td><td></td><td>c</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1100011</b></li>
+									<li>Oct: <b>0143</b></li>
+									<li>Hex: <b><i>0x</i>63</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>100</td><td></td><td>d</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1100100</b></li>
+									<li>Oct: <b>0144</b></li>
+									<li>Hex: <b><i>0x</i>64</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>101</td><td></td><td>e</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1100101</b></li>
+									<li>Oct: <b>0145</b></li>
+									<li>Hex: <b><i>0x</i>65</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>102</td><td></td><td>f</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1100110</b></li>
+									<li>Oct: <b>0146</b></li>
+									<li>Hex: <b><i>0x</i>66</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>103</td><td></td><td>g</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1100111</b></li>
+									<li>Oct: <b>0147</b></li>
+									<li>Hex: <b><i>0x</i>67</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>104</td><td></td><td>h</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1101000</b></li>
+									<li>Oct: <b>0150</b></li>
+									<li>Hex: <b><i>0x</i>68</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>105</td><td></td><td>i</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1101001</b></li>
+									<li>Oct: <b>0151</b></li>
+									<li>Hex: <b><i>0x</i>69</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>106</td><td></td><td>j</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1101010</b></li>
+									<li>Oct: <b>0152</b></li>
+									<li>Hex: <b><i>0x</i>6a</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>107</td><td></td><td>k</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1101011</b></li>
+									<li>Oct: <b>0153</b></li>
+									<li>Hex: <b><i>0x</i>6b</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>108</td><td></td><td>l</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1101100</b></li>
+									<li>Oct: <b>0154</b></li>
+									<li>Hex: <b><i>0x</i>6c</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>109</td><td></td><td>m</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1101101</b></li>
+									<li>Oct: <b>0155</b></li>
+									<li>Hex: <b><i>0x</i>6d</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>110</td><td></td><td>n</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1101110</b></li>
+									<li>Oct: <b>0156</b></li>
+									<li>Hex: <b><i>0x</i>6e</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>111</td><td></td><td>o</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1101111</b></li>
+									<li>Oct: <b>0157</b></li>
+									<li>Hex: <b><i>0x</i>6f</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>112</td><td></td><td>p</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1110000</b></li>
+									<li>Oct: <b>0160</b></li>
+									<li>Hex: <b><i>0x</i>70</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>113</td><td></td><td>q</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1110001</b></li>
+									<li>Oct: <b>0161</b></li>
+									<li>Hex: <b><i>0x</i>71</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>114</td><td></td><td>r</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1110010</b></li>
+									<li>Oct: <b>0162</b></li>
+									<li>Hex: <b><i>0x</i>72</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>115</td><td></td><td>s</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1110011</b></li>
+									<li>Oct: <b>0163</b></li>
+									<li>Hex: <b><i>0x</i>73</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>116</td><td></td><td>t</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1110100</b></li>
+									<li>Oct: <b>0164</b></li>
+									<li>Hex: <b><i>0x</i>74</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>117</td><td></td><td>u</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1110101</b></li>
+									<li>Oct: <b>0165</b></li>
+									<li>Hex: <b><i>0x</i>75</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>118</td><td></td><td>v</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1110110</b></li>
+									<li>Oct: <b>0166</b></li>
+									<li>Hex: <b><i>0x</i>76</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>119</td><td></td><td>w</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1110111</b></li>
+									<li>Oct: <b>0167</b></li>
+									<li>Hex: <b><i>0x</i>77</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>120</td><td></td><td>x</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1111000</b></li>
+									<li>Oct: <b>0170</b></li>
+									<li>Hex: <b><i>0x</i>78</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>121</td><td></td><td>y</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1111001</b></li>
+									<li>Oct: <b>0171</b></li>
+									<li>Hex: <b><i>0x</i>79</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>122</td><td></td><td>z</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1111010</b></li>
+									<li>Oct: <b>0172</b></li>
+									<li>Hex: <b><i>0x</i>7a</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>123</td><td>&amp;lcub;</td><td>&lcub;</td><!-- { -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1111011</b></li>
+									<li>Oct: <b>0173</b></li>
+									<li>Hex: <b><i>0x</i>7b</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>124</td><td>&amp;verbar;</td><td>&verbar;</td><!-- | -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1111100</b></li>
+									<li>Oct: <b>0174</b></li>
+									<li>Hex: <b><i>0x</i>7c</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>125</td><td>&amp;rcub;</td><td>&rcub;</td><!-- } -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1111101</b></li>
+									<li>Oct: <b>0175</b></li>
+									<li>Hex: <b><i>0x</i>7d</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>126</td><td>&amp;tilde;</td><td>&tilde;</td><!-- ~ -->
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1111110</b></li>
+									<li>Oct: <b>0176</b></li>
+									<li>Hex: <b><i>0x</i>7e</b></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>127</td><td>&#9249;</td><td>&#127;</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>Binary: <b>1111111</b></li>
+									<li>Oct: <b>0177</b></li>
+									<li>Hex: <b><i>0x</i>7f</b></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table> 
+		</article>
+	</main>
+
+</body>
+</html>
